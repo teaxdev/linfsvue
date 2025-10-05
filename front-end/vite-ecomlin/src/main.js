@@ -8,7 +8,7 @@ import ProductDetailPage from './pages/ProductDetailPage.vue'
 
 createApp(App)
 .use(VueRouter.createRouter({
-    history: VueRouter.createWebHistory(process.env.BASE_URL),
+    history: VueRouter.createWebHistory(import.meta.env.BASE_URL),
     routes: [{
         path: '/cart', 
         component: ShoppingCartPage,
